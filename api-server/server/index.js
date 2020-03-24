@@ -12,6 +12,8 @@ const Sentry = require('@sentry/node');
 const { sentry } = require('../../config/secrets');
 const { setupPassport } = require('./component-passport');
 
+const { isHandledError } = require('./utils/create-handled-error');
+
 const log = createDebugger('fcc:server');
 
 // force logger to always output
@@ -22,7 +24,15 @@ if (sentry.dns === 'dsn_from_sentry_dashboard') {
   log('Sentry reporting disabled unless DSN is provided.');
 } else {
   Sentry.init({
-    dsn: sentry.dns
+    dsn: sentry.dns,
+    beforeSend(event, hint) {
+      log('REPORTING TO SENTRY', hint.originalException.message);
+      log('EVENT', event);
+      log('ishandled?', isHandledError(hint.originalException));
+
+      // DEBUG: returning null stops the event from being reported to Sentry
+      return null;
+    }
   });
   log('Sentry initialized');
 }
