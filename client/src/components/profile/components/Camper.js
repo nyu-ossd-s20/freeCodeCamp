@@ -12,6 +12,7 @@ import './camper.css';
 const propTypes = {
   about: PropTypes.string,
   githubProfile: PropTypes.string,
+  isDonating: PropTypes.bool,
   isGithub: PropTypes.bool,
   isLinkedIn: PropTypes.bool,
   isTwitter: PropTypes.bool,
@@ -54,6 +55,7 @@ function Camper({
   about,
   yearsTopContributor,
   githubProfile,
+  isDonating,
   isLinkedIn,
   isGithub,
   isTwitter,
@@ -66,6 +68,7 @@ function Camper({
   const avatar = /example.com|identicon.org/.test(picture) ? (
     <Identicon
       bg={'#858591'}
+      className={`${isDonating ? 'supporter' : ''}`}
       count={5}
       fg={'#0A0A23'}
       padding={5}
@@ -75,7 +78,7 @@ function Camper({
   ) : (
     <Image
       alt={username + "'s avatar"}
-      className='avatar'
+      className={`avatar${isDonating ? ' supporter' : ''}`}
       responsive={true}
       src={picture}
     />

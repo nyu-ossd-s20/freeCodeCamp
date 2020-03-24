@@ -13,3 +13,7 @@
 .location {
   overflow-wrap: break-word;
 }
+
+.supporter {
+  border: 10px solid var(--fcc-green);
+}
