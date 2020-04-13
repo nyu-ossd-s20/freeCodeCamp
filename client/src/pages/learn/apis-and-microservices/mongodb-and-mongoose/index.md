@@ -38,9 +38,8 @@ Let's start by <a href='https://www.mongodb.com/cloud/atlas' target='_blank' rel
 
 Once you open the MongoDB Atlas page, you should sign up for a new account.
 
-- Click the <a href='https://cloud.mongodb.com/user#/atlas/login' target='_blank' rel='no-follow'>Sign In</a> button in the top right corner to open the registration page.
-- Click the <a href='https://cloud.mongodb.com/user#/atlas/register/accountProfile' target='_blank' rel='no-follow'>Register for a new account</a> link at the bottom of the sign in page.
-- Fill the registration form with your information and press **continue**.
+- Click the <a href='https://www.mongodb.com/cloud/atlas/register' target='_blank' rel='no-follow'>Start Free</a> button to open the registration page.
+- Fill the registration form with your information and press **Get started free**.
 - You should now be logged into your new account and see a modal with a green **Build my first cluster** button, click on it.
 
 ### Create a new cluster
@@ -48,10 +47,10 @@ Once you open the MongoDB Atlas page, you should sign up for a new account.
 - Go through the steps of building your first cluster by following the instructions they provide and clicking next after each step.
   - **Choose your cloud provider and region**, you can leave this as the default provided (typically AWS).
   - **Customize your cluster's specs**, you can also leave this as the default provided, `M0 Sandbox (Shared RAM, 512 MB Storage) Encrypted`.
-  - **Give your cluster a name**, you can also leave this as the default provided, `Cluster 0`.
+  - **Give your cluster a name**, you can also leave this as the default provided, `Cluster0`.
 - Now click the green **Create Cluster** button at the bottom of the screen and verify the image captions they provide. 
 - You should now see the message, `Your cluster is being created -
-New clusters take between 7-10 minutes to provision.` Wait until the cluster is created before going to the next step.
+New clusters take between 1-3 minutes to provision.` Wait until the cluster is created before going to the next step.
 
 ### Create a new user on the database
 
