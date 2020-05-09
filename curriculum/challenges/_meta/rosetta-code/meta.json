@@ -225,6 +225,14 @@
       "Find largest left truncatable prime in a given base"
     ],
     [
+      "5eb6f8171cb818c994468b19",
+      "Find palindromic numbers in both binary and ternary bases"
+    ],
+    [
+      "5eb71b99c576aa2b608c4905",
+      "Find the missing permutation"
+    ],
+    [
       "5a7dad05be01840e1778a0d1",
       "Fractran"
     ],
