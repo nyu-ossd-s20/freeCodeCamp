@@ -6,7 +6,7 @@ challengeType: 5
 
 ## Description
 <section id='description'>
-
+The day of the week of a date differs based on the month and the year because 365 (the number of days in a non-leap year) is not a multiple of 7 (the number of days in a week). For example, in 2020, January 1st falls on a Wednesday while in 2000, January 1st falls on a Saturday.
 </section>
 
 ## Instructions
